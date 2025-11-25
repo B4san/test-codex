@@ -1,1 +1,17 @@
-Making a Trello alike app
+# FlowTrack
+
+Aplicación web estilo Trello construida con React + Vite (estructura lista para instalar dependencias), Tailwind CSS y Zustand. Incluye componentes inspirados en Shadcn/UI, animaciones con Framer Motion y persistencia en LocalStorage.
+
+## Scripts
+- `npm install` para instalar dependencias.
+- `npm run dev` para levantar el entorno local.
+- `npm run build` para generar la build de producción.
+
+## Arquitectura
+- `src/components`: UI modular (tableros, columnas, tarjetas, botones, diálogos).
+- `src/context`: estado global con Zustand y persistencia.
+- `src/hooks`: utilidades reutilizables como `useLocalStorageState`.
+- `src/pages`: pantallas principales (App).
+- `src/utils`: helpers y tipos compartidos.
+
+La capa de estado está lista para conectarse a un backend reemplazando las mutaciones por llamadas HTTP y sincronizando las respuestas.
